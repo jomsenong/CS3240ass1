@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css">
   <style>
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
@@ -16,6 +18,15 @@
   </style>
 </head>
 <body>
+    <ul class="navigation" id="myNavigation">
+  <li><a href="index.html">Main</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a href="registration.html">Registration</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+  </li>
+</ul>
+    <b title="Games played">Games Played</b>
 <div class="container">
   <br>
   <div id="myGames" class="carousel slide" data-ride="carousel">
@@ -26,7 +37,6 @@
       <li data-target="#myGames" data-slide-to="2"></li>
       <li data-target="#myGames" data-slide-to="3"></li>
     </ol>
-
     <div class="carousel-inner" role="listbox">
 
       <div class="item active">
@@ -35,6 +45,8 @@
           <h3>Dota 2</h3>
           <p>Dota 2 is a free-to-play multiplayer online battle arena video game developed and published by Valve Corporation.</p>
         </div>
+           <c title="hrs spent">Hours spent: 1000hrs</c>
+          <span class="rating-static rating-45"></span>
       </div>
 
       <div class="item">
@@ -43,6 +55,8 @@
           <h3>Monster Hunter Generations</h3>
           <p>Monster Hunter Generations is an action role-playing video game developed and published by Capcom.</p>
         </div>
+          <c title="hrs spent">Hours spent: 50hrs</c>
+          <span class="rating-static rating-50"></span>
       </div>
     
       <div class="item">
@@ -51,6 +65,8 @@
           <h3>Ark: Survivor Evolved</h3>
           <p>Ark: Survival Evolved is an open world action-adventure survival video game in development by Studio Wildcard .</p>
         </div>
+           <c title="hrs spent">Hours spent: 15hrs</c>
+          <span class="rating-static rating-30"></span>
       </div>
 
       <div class="item">
@@ -59,6 +75,8 @@
           <h3>Fire Emblem Heroes</h3>
           <p>Fire Emblem Heroes is a free-to-play tactical role-playing game developed by Intelligent Systems and Nintendo</p>
         </div>
+           <c title="hrs spent">Hours spent: 8hrs</c>
+          <span class="rating-static rating-45"></span>
       </div>
   
     </div>
@@ -74,6 +92,5 @@
     </a>
   </div>
 </div>
-
 </body>
 </html>
