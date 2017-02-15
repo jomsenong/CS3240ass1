@@ -1,0 +1,166 @@
+/* Styles2 for validation form */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans";
+  font-size: 20px;
+}
+.container {
+  width: 500px;
+  margin: 25px auto;
+}
+
+form {
+  padding: 19px;
+  background: #2c3e50;
+  color: #fff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+form label{
+  border: 0;
+  margin-bottom: 3px;
+  display: block;
+  width: 100%;
+}
+form input{
+  border: 0;
+  margin-bottom: 4px;
+  display: block;
+  width: 100%;
+}
+form button {
+  border: 0;
+  margin-bottom: 3px;
+  display: block;
+  width: 100%;
+}
+form button {
+  height: 30px;
+  line-height: 30px;
+  background: #e67e22;
+  color: #fff;
+  margin-top: 10px;
+  cursor: pointer;
+}
+form input {
+  height: 25px;
+  line-height: 25px;
+  background: #fff;
+  color: #000;
+  padding: 0 6px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.navigation {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+/* Float the list items side by side */
+ul.navigation li {float: left;}
+
+/* Style the links inside the list items */
+ul.navigation li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 9px 19px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 21px;
+}
+
+/* Change background color of links on hover */
+ul.navigation li a:hover {background-color: #555;}
+
+/* Small screen to hide other menus */
+ul.navigation li.icon {display: none;}
+
+/* Show home and other settings in small screen */
+@media screen and (max-width:680px) {
+  ul.navigation li:not(:first-child) {display: none;}
+  ul.navigation li.icon {
+    display: inline-block;
+    float: right;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.navigation.responsive {position: relative;}
+  ul.navigation.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.navigation.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.navigation.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+.star {
+    float:left;
+}
+.star:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.star:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:200%;
+    line-height:1.2;
+    color:#ddd;
+    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.star:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.star > input:checked ~ label {
+    color: #f70;
+    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.star:not(:checked) > label:hover,
+.star:not(:checked) > label:hover ~ label {
+    color: gold;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.star > input:checked + label:hover,
+.star > input:checked + label:hover ~ label,
+.star > input:checked ~ label:hover,
+.star > input:checked ~ label:hover ~ label,
+.star > label:hover ~ input:checked ~ label {
+    color: #ea0;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.star > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}

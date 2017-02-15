@@ -6,18 +6,70 @@
         <meta name="author" content="Jeremy Ong">
         <link rel="stylesheet" href="css/style.css">
         <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
         <script src="js/script.js"></script>
     </head>
-
 <ul class="navigation" id="myNavigation">
-  <li><div class="col-lg-2 col-xl-2"><a href="index.html">Main</a></div></li>
-    <li><a href="gallery.html">Gallery</a></li>
-  <li><a href="registration.html">Registration</a></li>
+  <li><div class="col-sm-2 col-lg-2"><a href="index.html">Main</a></div></li>
+    <li><div class="col-lg-2 col-xl-2"><a href="gallery.html">Gallery</a></div></li>
+    <li><div class="col-lg-2 col-xl-2"><a href="registration.html">Registration</a></div></li>
   <li class="icon">
       <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
   </li>
 </ul>
     
     <body>
-        
+        <div id="main-content">
+		<div id="left-column">
+			<div id="logo">
+			Welcome to Jeremy Ong's Webpage
+			</div>
+			<div class="box">
+        		<h1>About me</h1>
+        		<p>Here is what i like: </p>
+				<ul style="margin-top:10px;">
+					<li>Playing games</li>
+					<li>Hanging out with friends</li>
+					<li>Taekwondo</li>
+					<li>Eating and sleeping</li>
+				</ul>
+			</div>
+			<h2>Picture of my rabbits</h2>
+            <div id="card"> 
+                    <div class="front"> 
+                        <img src="assets/rabbits.png" width="139" height="150" style="margin: 0 10px 10px 0;float:left;" />
+                    </div> 
+                    <div class="back">
+                        <img src="assets/rabbits2.png" width="139" height="150" style="margin: 0 10px 10px 0;float:left;" />
+                    </div> 
+                </div>
+			<p>
+				<em>Two cute holland lops. </em><br/>
+				<em>The left one is named Oreo and the right one is named muffin. They are 4 years old now and they have never stopped bringing joy to my life.</em><br/>
+			</p>
+		</div>
+		<div id="left-column">
+			<div id="main-image"><img src="assets/me.png" width="160" height="188" /></div>
+			<div class="sidebar">
+				<h3>Description:</h3>
+				<p>I am Jeremy Ong, a year 4 NUS student majoring in computer science</p>
+				<h3>Find Me Elsewhere</h3>
+				<div class="box">
+					<ul>
+						<li><a href="https://www.facebook.com/jeremy.o.sen" target="_blank">Facebook</a></li>
+						<li><a href="https://dualaisa.wordpress.com/" target="_blank">Wordpress</a></li>
+						<li><a href="https://github.com/jomsenong" target="_blank">Github</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
     </body>
+    
+    <script>
+$(function($) {
+  $("#card").flip(); 
+});
+</script>
